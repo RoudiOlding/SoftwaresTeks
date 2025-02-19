@@ -147,10 +147,74 @@ Resuming:
 - sort() -> sort a list
 - reverse() -> reverse a list
 
-'''
 
 ## 4. TUPLES
 
 myTuple = ('apple', 'banana', 'cherry')
 print(myTuple)
 print(myTuple[1])
+
+'''
+
+## 5. DICIONARIES
+
+anime = {
+    'name': 'One Piece',
+    'year': 1999,
+    'author': 'Eiichiro Oda'
+}
+
+print(anime)
+print(anime['name']) # is the same
+print(anime.get('year')) # is the same
+anime['year'] = 1998
+print(anime.get('year'))
+
+print(len(anime))
+
+animes = {
+    'one piece': {
+        'name': 'One Piece',
+        'year': 1999,
+        'author': 'Eiichiro Oda'
+    },
+    'naruto': {
+        'name': 'Naruto',
+        'year': 1999,
+        'author': 'Masashi Kishimoto'
+    },
+    'bleach': {
+        'name': 'Bleach',
+        'year': 2001,
+        'author': 'Tite Kubo'
+    }
+}
+
+for x in animes:
+    print(f'The anime {animes[x]["name"]} was created by {animes[x]["author"]} in {animes[x]["year"]}')
+
+print(animes["one piece"]["year"])
+
+x = animes.keys() #give the properties of the dictionary
+print(x)
+
+bleach_data = animes.pop('one piece')
+animes['the promised neverland'] = bleach_data
+print(animes)
+print(animes.values())
+print(animes.items())
+print(x)
+
+
+animes['the promised neverland'].update({'year': 2025})
+print(animes)
+
+animes.pop('the promised neverland') # you can do the same with del
+# del animes['the promised neverland']
+print(animes)
+
+for x in anime.keys():
+    print(x)
+
+for x in anime.values():
+    print(x)

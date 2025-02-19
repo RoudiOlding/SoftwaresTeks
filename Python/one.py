@@ -1,5 +1,6 @@
 # Python Basics
 
+'''
 ## 1. VARIABLES
 "Variable names can contain letters, numbers, and underscores (_)."
 "They cannot start with a number"
@@ -90,4 +91,60 @@ def myFunction():
 
 print(myFunction())
 
-## 3 LISTAS
+'''
+
+## 3 LISTS
+
+myAnimeList = ['Snk', 'Mob Psycho', 'Vinland Saga']
+print(myAnimeList)
+# or you can do this isntead
+
+for x in range (len(myAnimeList)):
+    print(myAnimeList[x])
+
+myAnimeList.append('One Piece')
+
+print(f'The first anime is: {myAnimeList[0]}')
+print(f'The last anime is: {myAnimeList[3]}')
+print(f'Printing the frist tree animes: {myAnimeList[:3]}')
+
+print(f'Original list: {myAnimeList}')
+myAnimeList.remove('One Piece')
+myAnimeList[1] = 'Naruto'
+print(f'New list: {myAnimeList}')
+myAnimeList.insert(2, 'One Piece')
+print(f'New list: {myAnimeList}')
+
+oldAnimes = ['Death Note', 'Bleach', 'Naruto']
+newAnimes = ['Frieren', 'Kaijuu', 'Dandadan']
+
+oldAnimes.extend(newAnimes)
+print(oldAnimes)
+
+# Remove with index
+oldAnimes.pop(0)
+print(oldAnimes)
+
+# Remove with value
+oldAnimes.remove('Kaijuu')
+print(oldAnimes)
+
+for x in oldAnimes:
+    print(x)
+
+# Sort a list aplhabetically
+oldAnimes.sort()
+print(oldAnimes)
+oldAnimes.sort(reverse=True)
+print(oldAnimes)
+
+'''
+Resuming:
+- append() -> add a new element
+- remove() -> remove an element
+- insert() -> insert an element
+- extend() -> add a list to another list
+- pop() -> remove an element by index
+- sort() -> sort a list
+- reverse() -> reverse a list
+'''

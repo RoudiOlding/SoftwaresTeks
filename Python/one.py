@@ -1,6 +1,6 @@
 # Python Basics
 
-## A. VARIABLES
+## 1. VARIABLES
 "Variable names can contain letters, numbers, and underscores (_)."
 "They cannot start with a number"
 
@@ -75,10 +75,19 @@ print(myLittleChild)
 newtext1 = f"My work, {myLittleChild} is very special for me. I have {age} years old"
 print(newtext1)
 
-## B. Loops
+## 2. BOOLEANS
 
-## C. Conditionals
+var9 = 300
+var10 = 450
 
-## D. Functions
+if var9 > var10:
+    print(f'The greatest number is {var9}')
+else:
+    print(f'The greastes number is {var10}')
 
-## E. File Handing
+def myFunction():
+    return True
+
+print(myFunction())
+
+## 3 LISTAS

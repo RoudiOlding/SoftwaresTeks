@@ -154,7 +154,6 @@ myTuple = ('apple', 'banana', 'cherry')
 print(myTuple)
 print(myTuple[1])
 
-'''
 
 ## 5. DICIONARIES
 
@@ -217,4 +216,32 @@ for x in anime.keys():
     print(x)
 
 for x in anime.values():
+    print(x)
+
+
+## 6. IF ELSE
+
+a = 5
+b = 5
+
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("a is greater than b")
+
+
+## 7. WHILE LOOPS
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i = i + 1
+
+'''
+
+## 8. FOR LOOPS
+for x in 'banana':
     print(x)

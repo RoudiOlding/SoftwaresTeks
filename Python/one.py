@@ -91,7 +91,7 @@ def myFunction():
 
 print(myFunction())
 
-'''
+
 
 ## 3 LISTS
 
@@ -138,7 +138,6 @@ print(oldAnimes)
 oldAnimes.sort(reverse=True)
 print(oldAnimes)
 
-'''
 Resuming:
 - append() -> add a new element
 - remove() -> remove an element
@@ -147,4 +146,11 @@ Resuming:
 - pop() -> remove an element by index
 - sort() -> sort a list
 - reverse() -> reverse a list
+
 '''
+
+## 4. TUPLES
+
+myTuple = ('apple', 'banana', 'cherry')
+print(myTuple)
+print(myTuple[1])

@@ -1,0 +1,4 @@
+Learning python
+Setup a new proyect python, junior level
+Setup a new proyect python, medium level
+Setup a new proyect python, senior level
